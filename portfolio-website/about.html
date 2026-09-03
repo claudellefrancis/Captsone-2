@@ -5,26 +5,58 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <header>
         <h1>About Me</h1>
-    </div>
 
-    <div>
-        <h2>My Background</h2>
-        <p>I have been working in web development for several years.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </header>
+    <main>
+        <section>
+            <h2>My Background</h2>
+                <p>I have been working in web development for several years.</p>
 
-        <h3>Skills</h3>
-        <!-- Table should be here but is missing -->
-        <p>HTML, CSS, JavaScript</p>
-    </div>
+            <h3>Skills</h3>
+                <!-- Table should be here but is missing -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Skill</th>
+                            <th>Experience</th>
+                        </tr>
+                    </thead>
 
-    <div>
-        <h3>My Photo</h3>
-        <img src="images/profile.jpg">
-    </div>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>5 years</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>5 years</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>5 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
 
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+           <div>
+                <h3>My Photo</h3>
+                <img src="images/profile.jpg">
+            </div>
+    </main>
+
+    <footer class="footer">
+        <p>Contact me at claudelle.francis@umuzi.org</p>
+    </footer>
+
 </body>
 </html>
