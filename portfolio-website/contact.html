@@ -5,26 +5,70 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <header>
         <h1>Contact Me</h1>
-    </div>
 
-    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
         <h2>Get In Touch</h2>
 
         <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                required
+                minlength="2">
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                required>
+
+            <label for="service">Service:</label>
+            <select id="service">
+                <option>Web Design</option>
+                <option>Web Development</option>
+                <option>Consulting</option>
+            </select>
+
+            <fieldset>
+                <legend>Project Type</legend>
+
+                <input type="radio" id="business" name="project">
+                <label for="business">Business</label>
+
+                <input type="radio" id="personal" name="project">
+                <label for="personal">Personal</label>
+            </fieldset>
+
+            <input type="checkbox" id="newsletter">
+
+            <label for="newsletter">Subscribe to newsletter</label>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
 
             <!-- Missing: labels, more input types, validation -->
 
-            <button>Send</button>
+            <button type="submit">Send Message</button>
         </form>
-    </div>
+    </section>
 
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+    <footer class="footer">
+        <p>Contact me at claudelle.francis@umuzi.org</p>
+    </footer>
+    </main>
 </body>
 </html>
