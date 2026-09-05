@@ -1,37 +1,85 @@
+
 /* Basic styles with errors and omissions */
 
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background: linear-gradient(to right, lightblue 20%, #33ccff 36%, #ff99cc 44%, #E6E6FA 55%, lightgreen 66%, lightyellow 80%);
+
 }
 
-.header {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    /* Missing: proper alignment */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
+    /* Missing: proper alignment */
+
 
 .header h1 {
     margin: 0;
 }
 
+header img {
+    width: 100px;
+    height: 70px;
+}
+
 /* Navigation styling missing completely */
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 16px;
+    font-size: 1rem;
+}
+
+nav ul :hover {
+    color: salmon;
+}
+
+nav li {
+    display: inline-block;
+}
+
 .hero {
-    padding: 50px;
-    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
     /* Poor colour contrast */
 }
 
-.hero h2 {
-    font-size: 36px;
+.hero-text h2 {
+  font-family: Arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  margin-bottom: 15px;
 }
 
-.hero img {
+.hero-text p {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.hero-img-wrapper {
+    position: relative;
+}
+
+.profile-pic {
     width: 100%;
+    max-width: 300px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: -60px;
     /* Missing: alt text handled in HTML, but sizing issues here */
 }
 
@@ -63,3 +111,4 @@ form input {
 }
 
 /* Code quality issues: inconsistent spacing, poor naming, no comments */
+Displaying styles.css.
