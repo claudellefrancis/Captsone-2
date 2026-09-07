@@ -7,7 +7,16 @@ body {
     padding: 0;
     color: #333;
     background: linear-gradient(to right, lightblue 20%, #33ccff 36%, #ff99cc 44%, #E6E6FA 55%, lightgreen 66%, lightyellow 80%);
+}
 
+section:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    margin: 40px auto 0;
+    border-radius: 4px;
 }
 
 header {
@@ -17,11 +26,6 @@ header {
     gap: 20px;
 }
     /* Missing: proper alignment */
-
-
-.header h1 {
-    margin: 0;
-}
 
 header img {
     width: 100px;
@@ -45,6 +49,17 @@ nav ul :hover {
 
 nav li {
     display: inline-block;
+}
+
+.contact-me, .index-portfolio, .about-me, .my-projects {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 .hero {
