@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background: linear-gradient(to right, lightblue 20%, #33ccff 36%, #ff99cc 44%, #E6E6FA 55%, lightgreen 66%, lightyellow 80%);
+    background: #f4f4f4;
 }
 
 section:not(:last-of-type)::after {
@@ -51,15 +51,11 @@ nav li {
     display: inline-block;
 }
 
-.contact-me, .index-portfolio, .about-me, .my-projects {
+h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 20px;
     color: #333;
-}
-
-h1 {
-    font-size: 3rem;
 }
 
 .hero {
