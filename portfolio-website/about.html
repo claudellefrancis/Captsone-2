@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Claudelle</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-
-    <div>
-        <h1>About Me</h1>
-    </div>
-
-    <header>
-
-        <div>
+<!--FIXED: Integrated the mainH1 heading and brand logo inside a single semantic <header> -->
+    <header class="site-header">
+        <div class="logo-container">
             <img src="images/logo.png" alt="Logo">
         </div>
 
-        <div>
-        <nav>
+    <h1>About Me</h1>
+
+    <!--FIXED: Removed generic wrapper div around <nav> for cleaner, valid HTML5 nesting -->
+        <nav aria-label="Main Navigation">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            </nav>
-            </div>
+        </nav>
     </header>
 
     <main>
+        <!-- OPTIMIZED: Kept background as a distinct structural section -->
         <section class="about">
             <h2>My Background</h2>
                 <p>  My journey into the tech world started as a Technical Support Consultant, mostly assisting with Hardware issues and later with software. <br>I then became a Support Specialist working on the Capitec Banking App, using SQL to determine whether transactions are fraud related.<br>
@@ -41,6 +40,38 @@
                 </p>
         </section>
 
+        <!-- OPTIMIZED: The Timeline/Experience data table section -->
+        <section class="background-table-section">
+            <h2>Timeline & Experience</h2>
+            <table class="background-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Milestone / Role</th>
+                        <th>Key Focus Areas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Early Career</td>
+                        <td>Technical Support Consultant</td>
+                        <td>Hardware & Software troubleshooting</td>
+                    </tr>
+                    <tr>
+                        <td>Recent Experience</td>
+                        <td>Business Analyst</td>
+                        <td>Stakeholder engagement, process mapping, Amazon Connect & SharePoint</td>
+                    </tr>
+                    <tr>
+                        <td>Current</td>
+                        <td>IMI Java Trainee Program</td>
+                        <td>Java Development training & software engineering career transition</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+<!--
             <section id="skills">
     <h2>Skills</h2>
 
@@ -72,6 +103,9 @@
     </div>
 
 </section>
+
+-->
+
     </main>
 
     <footer class="footer">

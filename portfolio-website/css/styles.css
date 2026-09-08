@@ -115,8 +115,33 @@ h1 {
     text-align: center;
 }
 
-#skills {
-    padding: 40px;
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #6f6565;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.background-table-section {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 16px;
     text-align: center;
 }
 
@@ -138,6 +163,10 @@ h1 {
 
 .skill-card:hover {
     transform: translateY(-5px);
+}
+
+.project-1 {
+    margin-left: 5%;
 }
 
 /* Missing: Only using 2-3 selector types, need 5+ */
