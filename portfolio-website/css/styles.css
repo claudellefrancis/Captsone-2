@@ -18,8 +18,6 @@ header {
 }
     /* Missing: proper alignment */
 
-
-
 header img {
     width: 100px;
     height: 70px;
@@ -186,9 +184,84 @@ tr:nth-child(even) {
 }
 
 /* Form styling incomplete */
-form input {
-    display: block;
-    margin: 10px 0;
+.contact-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-container h2 {
+    max-width: 700px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#newsletter,
+label[for="newsletter"] {
+    display: inline;
+    vertical-align: middle;
+}
+
+fieldset {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+fieldset label {
+    margin-right: 1rem;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+label[for="newsletter"] {
+    display: inline;
+    vertical-align: middle;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+}
+
+#newsletter {
+    width: auto;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4f3f3f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6b5555;
 }
 
 /* Missing: Box model demonstration (margin, padding, border) */

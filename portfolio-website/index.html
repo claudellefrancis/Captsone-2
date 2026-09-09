@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Added meta tags on all pages-->
+
 <head>
+    <!-- Added meta tags on all pages-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudelle's Portfolio</title>
+    <title>About Claudelle | Portfolio</title>
+    <!-- GLOBAL STYLE SHEET -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
-    <div>
-        <h1>My Portfolio: IMI Trainee Java Developer</h1>
-    </div>
+    <h1 class="site-title">Claudelle Francis Portfolio Website</h1>
 
-    <header class="header">
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Logo">
-        </div>
+    <!-- SEMANTIC TAG 1: HEADER -->
+    <header class="site-header">
+        <!-- Structural Image layout meeting Alt criteria -->
+        <img src="images/logo.png" alt="Claudelle Creative Agency Brand Logo" class="site-logo">
 
-    <!-- Navigation missing -->
-    <nav aria-label="Main Navigation">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-</header>
+         <!-- SEMANTIC TAG 2: NAV (Contains 4 fully qualified functional paths) -->
+        <nav class="main-nav" aria-label="Primary Site Navigation">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="current-page">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
         <section class="hero-container">
