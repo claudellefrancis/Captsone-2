@@ -15,6 +15,8 @@ header {
     justify-content: center;
     gap: 20px;
     background-color: #7a7070;
+    margin-left: 5%;
+    margin-right: 5%;
 }
     /* Missing: proper alignment */
 
@@ -210,11 +212,20 @@ tr:nth-child(even) {
     font-weight: bold;
 }
 
-#newsletter,
-label[for="newsletter"] {
-    display: inline;
-    vertical-align: middle;
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.newsletter label {
+    margin: 0;
+}
+
+.newsletter input[type="checkbox"] {
+    margin: 0;
+}
+
 
 fieldset {
     display: flex;
@@ -252,7 +263,7 @@ textarea {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #4f3f3f;
+    background-color: #7a7070;
     color: white;
     border: none;
     border-radius: 6px;
@@ -270,11 +281,13 @@ button:hover {
 /* Missing: Table styling */
 
 .footer {
-    background-color: gray;
+    background-color: #7a7070;
     color: white;
     padding: 16px;
     /* Wrong alignment */
     text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* Code quality issues: inconsistent spacing, poor naming, no comments */
