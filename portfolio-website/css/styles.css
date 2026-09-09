@@ -18,6 +18,8 @@ header {
 }
     /* Missing: proper alignment */
 
+
+
 header img {
     width: 100px;
     height: 70px;
@@ -115,6 +117,12 @@ h1 {
     text-align: center;
 }
 
+.about-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
 table {
     width: 60%;
     margin: 20px auto;
@@ -191,7 +199,7 @@ form input {
 .footer {
     background-color: gray;
     color: white;
-    padding: 20px;
+    padding: 16px;
     /* Wrong alignment */
     text-align: left;
 }
