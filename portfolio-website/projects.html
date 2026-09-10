@@ -8,17 +8,13 @@
 </head>
 
 <body>
-    <div>
+
         <h1>My Projects</h1>
-    </div>
 
 <header>
 
-    <div>
-        <img src="images/logo.png" alt="Logo">
-    </div>
+    <img src="images/logo.png" alt="Logo">
 
-    <div>
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -27,25 +23,32 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    </div>
 </header>
 
-    <section>
-        <h2>Project 1</h2>
-        <img src="images/project1.jpg">
-        <p>A responsive website built with HTML and CSS.</p>
-    </section>
+    <section id="projects">
+        <h2>My Projects</h2>
 
-    <section>
-        <h2>Project 2</h2>
-        <img src="images/project2.jpg">
-        <p>An e-commerce site with modern design.</p>
-    </section>
+        <div class="projects-grid">
 
-    <section>
-        <h2>Project 3</h2>
-        <img src="images/project3.jpg">
-        <p>A mobile app for managing tasks and appointments.</p>
+            <article class="project-card">
+                <h3>Hair Day Salon</h3>
+                <img src="images/hair-day.png">
+                <p>A responsive website built with HTML and CSS.</p>
+            </article>
+
+            <article class="project-card">
+                <h3>Little Lemon Booking System with React</h3>
+                <img src="images/little-lemon.png">
+                <p>An e-commerce site with modern design.</p>
+            </article>
+
+            <article class="project-card">
+                <h3>PayNest System</h3>
+                <img src="images/payNest.png">
+                <p>A mobile app for managing tasks and appointments.</p>
+            </article>
+
+        </div>
     </section>
 
     <!-- Third project missing -->
