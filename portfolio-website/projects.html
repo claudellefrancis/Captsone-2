@@ -9,50 +9,57 @@
 
 <body>
 
-        <h1>My Projects</h1>
+    <h1>My Projects</h1>
 
-<header>
+    <!-- Header containing logo and main navigation-->
+    <header>
+        <img src="images/logo.png" alt="Logo">
 
-    <img src="images/logo.png" alt="Logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="current-page">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
 
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
 
-    <section id="projects">
-        <h2>My Projects</h2>
+        <!-- Project portfolio showcase -->
+        <section id="projects">
+            <h2>My Projects</h2>
 
-        <div class="projects-grid">
+                <div class="projects-grid">
 
-            <article class="project-card">
-                <h3>Hair Day Salon</h3>
-                <img src="images/hair-day.png" alt="hair-day">
-                <p>A responsive website built with HTML and CSS.</p>
-            </article>
+                    <!-- Individual project card-->
+                    <article class="project-card">
+                        <h3>Hair Day Salon</h3>
+                        <img src="images/hair-day.png" alt="hair-day-website">
+                        <p>A responsive website built with HTML and CSS.</p>
+                    </article>
 
-            <article class="project-card">
-                <h3>Little Lemon Booking System with React</h3>
-                <img src="images/little-lemon.png" alt="little-lemon">
-                <p>An e-commerce site with modern design.</p>
-            </article>
+                    <article class="project-card">
+                        <h3>Little Lemon Booking System with React</h3>
+                        <img src="images/little-lemon.png" alt="little-lemon-booking-app">
+                        <p>A React-based restaurant reservation and booking application</p>
+                    </article>
 
-            <article class="project-card">
-                <h3>PayNest System</h3>
-                <img src="images/payNest.png" alt="payNest">
-                <p>A mobile app for managing tasks and appointments.</p>
-            </article>
-        </div>
-    </section>
+                    <article class="project-card">
+                        <h3>PayNest System</h3>
+                        <img src="images/payNest.png" alt="payNest-payment-system">
+                        <p>A payment processing system for secure online transactions</p>
+                    </article>
+                </div>
+            </section>
+    </main>
 
-    <section class="footer">
+    <!-- Footer contact information -->
+    <footer class="footer">
         <h3>Contact me</h3>
         <p>Contact me at claudelle.francis@umuzi.org</p>
-    </section>
+        <p>&copy; 2026 Claudelle Francis. All rights reserved.</p>
+    </footer>
 </body>
 </html>
