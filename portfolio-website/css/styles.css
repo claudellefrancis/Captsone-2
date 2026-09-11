@@ -373,12 +373,26 @@ span {
 .footer {
     background-color: #7a7070;
     color: white;
-    padding: 16px;
+    padding: 20px;
     text-align: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 40px 5% 0;
+}
 
+.footer-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1000px;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
