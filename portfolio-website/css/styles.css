@@ -353,6 +353,20 @@ span {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text {
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Footer styling */
