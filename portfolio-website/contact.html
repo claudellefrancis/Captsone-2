@@ -33,17 +33,21 @@
                 type="text"
                 id="name"
                 required
-                minlength="2">
+                minlength="2"
+                maxlength="20"
+                pattern="[A-Za-z]+">
 
             <label for="email">Email:</label>
             <input
                 type="email"
                 id="email"
+                name="email"
                 required
-                minlength="2">
+                minlength="2"
+                maxlength="100">
 
             <label for="service">Service:</label>
-            <select id="service">
+            <select id="service" name="service">
                 <option>Web Design</option>
                 <option>Web Development</option>
                 <option>Consulting</option>
@@ -52,19 +56,19 @@
             <fieldset>
                 <legend>Project Type</legend>
                     <label for="business">Business</label>
-                    <input type="radio" id="business" name="project">
+                    <input type="radio" id="business" name="project" value="business">
 
                     <label for="personal">Personal</label>
-                    <input type="radio" id="personal" name="project">
+                    <input type="radio" id="personal" name="project" value="personal">
             </fieldset>
 
             <p class="newsletter">
-            <input type="checkbox" id="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
             <label for="newsletter">Subscribe to newsletter</label>
             </p>
 
             <label for="message">Message:</label>
-            <textarea id="message" minlength="2" required></textarea>
+            <textarea id="message" name="message" minlength="2" maxlength="500" required></textarea>
 
             <button class="contact-btn" type="submit">Send Message</button>
         </form>
