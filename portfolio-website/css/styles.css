@@ -1,10 +1,25 @@
+:root {
+    --primary: #284B63;       /* Navy Slate */
+    --secondary: #4F6D7A;     /* Muted Cyan */
+    --accent: #D18F5A;        /* Warm Copper */
+    --hover: #3C6382;         /* Hover Blue */
+
+    --background: #F9FAFB;
+    --surface: #FFFFFF;
+
+    --text: #1F2933;
+    --text-light: #52606D;
+
+    --focus: #D18F5A;
+}
+
 /* Global page styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #ffffff;
-    background: #e0e0e0;
+    background: var(--background);
+    color: var(--text);
 }
 
 a:focus,
@@ -22,7 +37,7 @@ nav {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #7a7070;
+    background-color: var(--primary);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -33,7 +48,7 @@ header img {
 }
 
 nav a {
-    color: ffffff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -55,16 +70,23 @@ nav ul li a {
 }
 
 .nav-links a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: #ffffff;
+    color: #4a3a3a;
+    border-radius: 4px;
+}
+
 nav a:hover,
 nav a:focus {
-    background-color:#ffffff;
-    color: 4a3a3a;
+    background-color: #ffffff;
+    color: var(--primary);
     border-radius: 4px;
 }
 
@@ -72,7 +94,7 @@ h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 20px;
-    color: #4f4545;
+    color: var(--primary);
 }
 
 /* Section layout */
@@ -84,7 +106,9 @@ section {
 .hero-container {
     display: flex;
     justify-content: center;
-    padding: 140px 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 150px 20px;
     background-color: #e0e0e0;
 }
 
@@ -106,13 +130,13 @@ section {
 
 .hero-text h2 {
   font-family: Arial, sans-serif;
-  color: #333;
+  color: var(--primary);
   font-size: 36px;
   margin-bottom: 15px;
 }
 
 .hero-text p {
-  color: #333;
+  color: var(--text-light);
   font-size: 18px;
   margin-bottom: 25px;
   max-width: 320px;
@@ -129,7 +153,7 @@ section {
     display: inline-block;
     width: fit-content;
     padding: 10px 20px;
-    background-color: #8b2e2e;
+    background-color: var(--primary);
     color: #ffffff;
     border: none;
     text-decoration: none;
@@ -173,7 +197,7 @@ td {
 }
 
 th {
-    background-color: #6f6565;
+    background-color: var(--primary);
     color: white;
 }
 
@@ -196,10 +220,10 @@ tr:nth-child(even) {
 }
 
 .skill-card {
-    background-color: #8b4f4f;
+    background-color: var(--primary);
     width: 250px;
     padding: 20px;
-    border: 2px solid #7a7070;
+    border: 2px solid var(--secondary);
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
@@ -294,7 +318,7 @@ input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border: 2px solid #8b4f4f;
+    border: 2px solid var(--accent);
 }
 
 #newsletter {
@@ -306,7 +330,7 @@ textarea:focus {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #8b4f4f;
+    background-color: var(--primary);
     color: white;
     border: none;
     border-radius: 6px;
@@ -316,9 +340,9 @@ button {
 }
 
 button:hover,
-.btn:hover {
-    background-color: #5c1d1d;
-    color: ffffff;
+.btn:hover,
+.contact-btn:hover {
+    background-color: var(--hover);
 }
 
 /* Project cards */
@@ -336,7 +360,7 @@ button:hover,
 }
 
 .project-card {
-    background-color: #d9d9d9;
+    background-color: var(--surface);
     color: #333333;
     transition: all 0.3s ease;
     border-radius: 10px;
@@ -355,7 +379,7 @@ span {
 }
 
 .project-card:hover {
-    background-color: #8b4f4f;
+    background-color: var(--primary);
     color: ffffff;
 }
 
@@ -422,10 +446,16 @@ span {
 }
 */
 .footer a {
-    color: ffffff;
+    color: #ffffff;
 }
 
 footer a:hover,
 footer a:focus {
-    color: #ffd700;
+    color: var(--accent);
+}
+
+.current-page {
+    color: var(--accent) !important;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 3px;
 }
